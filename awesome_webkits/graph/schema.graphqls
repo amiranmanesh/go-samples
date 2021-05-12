@@ -1,0 +1,21 @@
+# GraphQL schema example
+#
+# https://gqlgen.com/getting-started/
+
+type Project{
+    id: ID!
+    name: String!
+}
+
+type ProjectApi{
+    id: ID!
+    name: String!
+    path: String!
+    type: String!
+    result: String!
+}
+
+type Query {
+    projects: [Project!]!
+    projectApis: [ProjectApi!]!
+}
